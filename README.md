@@ -1,2 +1,3 @@
-# ml_problems
-Contains various machine learning problems and solutions to them.
+# Machine Learning Projects
+
+Contains various machine learning projects.
