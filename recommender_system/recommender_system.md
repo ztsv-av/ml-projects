@@ -376,6 +376,7 @@ def pprint_train(x_train, features, vs, u_s, maxcount=5, user=True):
     """
     prints user_train or item_train nicely
     """
+
     if user:
         flist = [".0f", ".0f", ".1f",
                  ".1f", ".1f", ".1f", ".1f", ".1f", ".1f", ".1f", ".1f", ".1f", ".1f", ".1f", ".1f", ".1f", ".1f"]
@@ -425,6 +426,7 @@ def print_pred_movies(y_p, item, movie_dict, maxcount=10):
     print results of prediction of a new user
     inputs are expected to be in sorted order, unscaled
     """
+
     count = 0
     disp = [["y_p", "movie id", "rating ave", "title", "genres"]]
 
@@ -441,6 +443,7 @@ def print_pred_movies(y_p, item, movie_dict, maxcount=10):
 
 
 def gen_user_vecs(user_vec, num_items):
+
     """
     given a user vector return: 
         user predict maxtrix to match the size of item_vecs
@@ -522,7 +525,7 @@ def print_existing_user(y_p, y, user, items, ivs, uvs, movie_dict, maxcount=10):
     print results of prediction for a user who was in the database
     inputs are expected to be in sorted order, unscaled
     """
-    
+
     count = 0
     disp = [["y_p", "y", "user", "user genre ave", "movie rating ave", "movie id", "title", "genres"]]
     count = 0
